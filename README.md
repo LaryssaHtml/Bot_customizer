@@ -3,7 +3,7 @@
 **Customize your Garry's Mod bots like never before.**
 Models, colors, voices, combat, dancing, profiles, and a lot more — all from one simple menu.
 
-> 🌐 **Language note:** The menu defaults to **Portuguese**. To change it, go to the **Options tab**, pick your language, then **fully close and reopen** the Bot Customizer menu so everything translates correctly.
+> 🌐 **Language note:** The menu addon defaults to **Portuguese**. To change it, go to the **Options/Opções tab**, pick your language, then **fully close and reopen** the Bot Customizer menu so everything translates correctly. If you're from another country and don't understand English very well, feel free to copy these tutorials into an AI translator or Google Translate to translate them into your language. Enjoy! ❤️
 
 ---
 
@@ -19,6 +19,7 @@ Models, colors, voices, combat, dancing, profiles, and a lot more — all from o
 ---
 
 ## 🚀 Quick Start
+> You can also add bots through the menu, but it is recommended to first use the console when opening the server to avoid errors and prevent the bots from walking around the map without the `Bot_zombie 1` command. After doing this, you can freely add or remove bots from your server through the menu.
 
 1. **Start a Multiplayer game** on any map (this addon only works in Multiplayer).
 2. **Spawn a bot** — open the console and type:
@@ -29,7 +30,7 @@ Models, colors, voices, combat, dancing, profiles, and a lot more — all from o
    ```
    bot_zombie 1
    ```
-   > Do this *before* adding more bots, or they'll all be walking around the map instead of standing still for you to customize.
+   
 4. **Open the menu** — press **F6** (default keybind, changeable in Options) or type:
    ```
    bot_customizer
@@ -51,7 +52,7 @@ Models, colors, voices, combat, dancing, profiles, and a lot more — all from o
 </details>
 
 <details>
-<summary><b>🎨 Appearance</b></summary>
+<summary><b>👩👨 Appearance</b></summary>
 
 - Change the bot's **model**, with live preview before applying
 - Edit **bodygroups** (for models that support them)
@@ -59,7 +60,7 @@ Models, colors, voices, combat, dancing, profiles, and a lot more — all from o
 </details>
 
 <details>
-<summary><b>🪪 Identity & Profile</b></summary>
+<summary><b>📃 Identity & Profile</b></summary>
 
 - Custom **name**
 - **Name color**, including gradient/degradê support
@@ -170,12 +171,12 @@ Honestly — I wanted bots for screenshots, videos, and roleplay, and just wante
 
 ---
 
-## 🙏 About & Credits
+##  About & Credits
 
 Created solo, with AI assistance on complex Lua logic (combat AI, Freecam, and similar systems). Idea, design, and structure are original.
 
 - **GitHub:** [LaryssaHtml](https://github.com/)
-- **Instagram:** [@emotionalssciencegirl](https://www.instagram.com/)
-- **YouTube:** Lyssa
+- **Instagram:** [@emotionalssciencegirl](https://www.instagram.com/emotionalssciencegirl/)
+- **YouTube:**  [Lyssa](https://www.youtube.com/@lary9lf)
 
 Skull icon PNG sourced from rawpixel.com — contact me for any credit/removal requests regarding other assets.
