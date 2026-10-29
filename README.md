@@ -1,40 +1,92 @@
 # 🤖 Bot Customizer
 
 **Customize your Garry's Mod bots like never before.**
-Models, colors, voices, combat, dancing, profiles, and a lot more — all from one simple menu.
+Models, colors, voices, conversations, combat, dancing, profiles, inventory, saved characters, and a lot more, all from one simple menu.
 
-> 🌐 **Language note:** The menu addon defaults to **Portuguese**. To change it, go to the **Options/Opções tab**, pick your language, then **fully close and reopen** the Bot Customizer menu so everything translates correctly. If you're from another country and don't understand English very well, feel free to copy these tutorials into an AI translator or Google Translate to translate them into your language. Enjoy! ❤️
+> 🌐 **Language note:** The menu defaults to **Portuguese**. Go to the **Options tab**, pick your language, then **fully close and reopen** the Bot Customizer menu so everything translates correctly. Bots can talk in **Portuguese, English, Spanish and Russian** (some translation mistakes may exist). If you don't understand English well, feel free to paste this page into an AI translator or Google Translate. Enjoy! ❤️
 
 ---
 
 ## 📑 Table of Contents
 
+- [Update Log](#-update-log)
 - [Quick Start](#-quick-start)
 - [Full Feature List](#-full-feature-list)
 - [Adding Custom VOX Audio](#-adding-custom-vox-audio)
+- [Doors & Navigation (Experimental)](#-doors--navigation-experimental)
 - [Freecam Troubleshooting](#-freecam-troubleshooting)
 - [FAQ](#-faq)
 - [About & Credits](#-about--credits)
 
 ---
 
-## 🚀 Quick Start
-> You can also add bots through the menu, but it is recommended to first use the console when opening the server to avoid errors and prevent the bots from walking around the map without the `Bot_zombie 1` command. After doing this, you can freely add or remove bots from your server through the menu.
+## 🆕 Update Log
 
-1. **Start a Multiplayer game** on any map (this addon only works in Multiplayer).
-2. **Spawn a bot** — open the console and type:
-   ```
-   bot
-   ```
-3. **Stop it from wandering off** — right after, type:
-   ```
-   bot_zombie 1
-   ```
-   
-4. **Open the menu** — press **F6** (default keybind, changeable in Options) or type:
-   ```
-   bot_customizer
-   ```
+### 🎃 Big Halloween Update 1.1
+
+**💬 Bots can talk now!**
+- Bots understand chat requests: follow, stop, come here, "excuse me", crouch, jump. They handle abbreviations, typos and even swearing.
+- Languages: Portuguese, English, Spanish, Russian.
+- Bot speech also appears in the chat, in color.
+- Personality: friendly, sarcastic or dark, or automatic based on the bot's biography.
+- Continuous conversation: after you talk to a bot, it stays in the conversation for 60 seconds.
+- **Teach your bot:** "I'll teach you" or "when I say X, answer Y". Up to 1000 phrases per bot, answers up to 240 characters. Everything is saved.
+- Bots can tell their biography and answer questions about it (best friend, where they live, who they hate). *Experimental.*
+- Bots remember your name and gender.
+- RP roles: soldier, master, villain and shopkeeper.
+- Dating: bots can accept, stall or refuse.
+- About 400 famous names, each bot with its own fixed opinion.
+- Favorites by category and personality. Bots can sing (public-domain songs only).
+- Fight lines when a fight starts, when hit, and when winning.
+- Bots comment when they receive a new weapon.
+- Vehicle talk, with the bot looking back and forth between front and player.
+- Gender-aware speech (e.g. "curioso" becomes "curiosa" for female bots).
+- Bots use the age, profession and origin you fill in on the Profile Sheet.
+- You can still write as the bot from the **Bots** tab.
+ 
+
+  **⚔️ Combat improvements**
+- Bots now aim better with firearms and can shoot from a distance or up close.
+- Bots may fight back against NPCs when they feel threatened.
+- As an ally, the bot defends you if someone attacks you.
+
+**🧭 Doors & navigation (experimental)**
+- Bots can open doors and use a working navmesh to reach you.
+- Locked door? The bot looks for another route, and if none exists it tries to unlock the door.
+- Bots can use unlocking items (keys SWEP, Sonic Screwdriver, etc.) if you give them one.
+- Without a suitable item, the bot tries the handle and gives up.
+- Admin command `bc_nav_debug` shows how the bot is following you (may be in Portuguese).
+
+**🎨 Menu & visuals**
+- 8 new themes: purple, black & gray, red, hacker green, hot pink, white and pink, Halloween and Christmas.
+- Speech bubble with the profile photo (GIF supported), with text, background and border colors.
+- **Profile Sheet** tab: Age, Height, Profession, Origin and Trait, plus new Polaroid styles.
+- Options and Profile now use dropdown menus for a cleaner layout.
+- New Items mode: **Always hold**.
+- Name above the head now works correctly on any model.
+- Teleport: the bot now spawns facing you, and groups all face you.
+
+**🛠️ New tabs & systems**
+- **Inventory:** see the bot's items, equip/unequip weapons, reorder and remove items.
+- **Characters:** save name, biography, colors, etc. and load them on another bot or in a later session.
+- **Allies:** allied bots never damage you and won't turn on you after accidental hits. Their ally status is shown on their sheet. They also defend you if someone attacks you.
+- **Permissions (admin):** choose who can use the menu and edit bots on public servers. *Experimental.*
+- **VOX wheel (G):** quick voice lines, up to 2 pages.
+- **Teleport wheel (T):** quick teleport, or click the center to make the bot follow you.
+
+> ⚠️ This update was tested solo, with no beta testers. Bugs are expected, so please report anything odd!
+
+🎃 **Have a spooky, fun-filled Halloween, and enjoy your time with your bots!** 
+
+---
+
+## 🚀 Quick Start
+> You can also add bots through the menu, but it is recommended to first use the console when opening the server to avoid errors and stop bots from wandering with `bot_zombie 1`. After that, add or remove bots freely from the menu.
+
+1. **Start a Multiplayer game** on any map (Multiplayer only).
+2. **Spawn a bot:** open the console and type `bot`
+3. **Stop it from wandering:** `bot_zombie 1`
+4. **Open the menu:** press **F6** (changeable in Options) or type `bot_customizer`
 5. **Pick your language** in the Options tab, then close and reopen the menu.
 6. Go to the **BOTS tab**, select a bot, and start customizing!
 
@@ -45,82 +97,91 @@ Models, colors, voices, combat, dancing, profiles, and a lot more — all from o
 <details>
 <summary><b>🧍 Bot Management</b></summary>
 
-- Add bots directly from the menu
-- Remove bots directly from the menu
-- Tip: add bots via console (`bot` + `bot_zombie 1`) first so they don't wander before you customize them
+- Add and remove bots from the menu
+- Save and load characters (Characters tab)
+- Tip: add bots via console first so they don't wander before you customize them
 
 </details>
 
 <details>
-<summary><b>👩👨 Appearance</b></summary>
+<summary><b>👩👨 Appearance & Identity</b></summary>
 
-- Change the bot's **model**, with live preview before applying
-- Edit **bodygroups** (for models that support them)
-
-</details>
-
-<details>
-<summary><b>📃 Identity & Profile</b></summary>
-
-- Custom **name**
-- **Name color**, including gradient/degradê support
-- Custom **title** under the name
-- Full **bio / bot profile card**
-- **Profile photo** — supports static images or GIFs
-- **Polaroid-style** photo option
+- Change **model** with live preview, edit **bodygroups**
+- Custom **name**, **name color** (gradients supported), **title**, full **bio / profile card**
+- **Profile photo** (static or GIF), Polaroid-style frames
+- Profile Sheet: age, height, profession, origin, trait
+- 7 menu themes
 
 </details>
 
 <details>
 <summary><b>😀 Expressions</b></summary>
 
-- Quick **facial expression** sliders (smile, anger, sadness, etc.)
-- Works best with models that support **Face Poser** — some bots may not visibly react if their model doesn't support it, that's normal, not a bug
+- Quick **facial expression** sliders
+- Best with models that support **Face Poser**; if a model doesn't, that's normal, not a bug
+
+</details>
+
+<details>
+<summary><b>💬 Conversation</b></summary>
+
+- Chat commands, 4 languages, personalities, memory of your name, teachable phrases, biography Q&A, RP roles, dating, famous names, singing and more (see Update Log)
+- Conversation mode in Options: quiet, normal or commentator
 
 </details>
 
 <details>
 <summary><b>🔊 Voice / VOX</b></summary>
 
-- Built-in VOX voice lines
-- **Custom audio support** — add your own voice files (see [Adding Custom VOX Audio](#-adding-custom-vox-audio))
+- Built-in VOX lines and **custom audio support**
+- **VOX wheel** on the **G** key, up to 2 pages
 
 </details>
 
 <details>
 <summary><b>⚔️ Combat & AI Behavior</b></summary>
 
-- **Hostile mode** — bots fight each other or the player
-- **Follow mode** — bots follow you around
-- Bots **react to being attacked**, even accidentally — if you don't want a fight, this can be **disabled in the Options tab** so accidental hits don't trigger retaliation
-- Bots can **self-heal** during a fight
-- Give bots **weapons** or **held props** (up to **3 loadout slots** to switch between)
+- **Hostile mode**, **Follow mode**, and **Ally mode** (no damage to you)
+- Optional retaliation when attacked (disable in Options)
+- Self-healing during fights
+- - Improved firearm accuracy, ranged or close-range shooting
+- Bots can attack NPCs when threatened
+- Allied bots defend you when you are attacked
+- Weapons or held props, up to **3 loadout slots**, plus a full **Inventory tab**
 
 </details>
 
 <details>
 <summary><b>🎒 Items & Props</b></summary>
 
-- Give the bot a real weapon **or** a decorative prop version of it
-- Attach a **free-choice prop** to your own hand or the bot's hand
-- Hold a **microphone or any other prop** while dancing with ACTMOD
+- Real weapon **or** decorative prop version
+- Free-choice prop on your hand or the bot's hand
+- **Always hold** mode
+- Hold a mic or any prop while dancing with ACTMOD
 
 </details>
 
 <details>
 <summary><b>🚗 World Interaction</b></summary>
 
-- Make bots **enter your vehicle**
-- **Teleport bots** to your location instantly
-- **Freecam** system for cinematic shots (see troubleshooting below)
+- Bots enter your vehicle and talk to you inside it
+- **Teleport wheel (T):** instant teleport or follow
+- Door opening and navmesh pathing (experimental)
+- **Freecam** for cinematic shots
 
 </details>
 
 <details>
 <summary><b>💃 Dancing (ACTMOD)</b></summary>
 
-- Full compatibility with **ACTMOD** — make your bots dance
-- Combine with props (hold a mic, an instrument, anything) while dancing
+- Full **ACTMOD** compatibility, combine with props while dancing
+
+</details>
+
+<details>
+<summary><b>🔐 Server Permissions</b></summary>
+
+- Admins choose who can use the menu and edit bots, to avoid griefing on public servers (experimental)
 
 </details>
 
@@ -128,55 +189,41 @@ Models, colors, voices, combat, dancing, profiles, and a lot more — all from o
 
 ## 🎵 Adding Custom VOX Audio
 
-1. Go to your Garry's Mod installation folder, usually:
+1. Go to your Garry's Mod folder, usually:
    ```
    C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod
    ```
-2. Create this folder structure inside it (create any missing folders manually):
+2. Create this folder structure (create any missing folders):
    ```
    sound\bot_customizer\voices
    ```
-3. Drop your audio files inside the `voices` folder.
-   - **WAV recommended**, MP3 should also work, other formats may vary.
-4. Your files will now show up in the VOX system inside Bot Customizer.
+3. Drop your audio files in `voices`. **WAV recommended**, MP3 should also work.
+4. Your files appear in the VOX system and on the **G** wheel (up to 2 pages).
+
+---
+
+## 🚪 Doors & Navigation (Experimental)
+
+- Bots open doors and use the navmesh to reach you, but results depend on the map. They may get lost, stuck on stairs or glitch on some doors.
+- Locked door: the bot searches for another exit. If there is none, it tries to unlock the only door in front of it.
+- To let a bot unlock doors, give it an item that does it (keys SWEP, Sonic Screwdriver, etc.). It works best if the item's use is configured well. Without one, the bot tries the handle and gives up.
+- Admins can run `bc_nav_debug` to see how a bot is following you.
 
 ---
 
 ## 🎥 Freecam Troubleshooting
 
-- Having issues with Freecam? As a last resort, try **restarting the server**.
-- Stuck on the ground after leaving Freecam? Press **V**, float upward, then release it — you should be able to move normally again.
+- Issues with Freecam? As a last resort, restart the server.
+- Stuck on the ground after leaving Freecam? Press **V**, float upward, then release it.
 
 ---
 
 ## ❓ FAQ
 
-**Why is the menu in Portuguese by default?**
-That's just the default language. Change it anytime in the **Options tab**, then close and reopen the menu so the translation applies fully.
-
-**Did you use AI to make this?**
-Yes — I used AI assistance mainly for the **Lua logic** behind more complex systems (bot combat AI, Freecam, etc.). The original **idea, design direction, and structure** of the addon are entirely mine. This addon took about a month of continuous testing, fixing, and revising — it's not something you just generate and ship.
-
-**Can I use an image/asset you used and you don't have rights to?**
-If you're the original owner of any image used (like backgrounds) and want it removed or credited differently, just contact me — I'll remove or swap it, no problem.
-
-**Can I suggest a feature or report a bug?**
-Absolutely, suggestions and bug reports are welcome! Just keep in mind updates might take a while since I juggle other projects.
-
-**Can I make my own improved version?**
-Go for it! Just please credit the original idea/addon.
-
-**Why did you make this?**
-Honestly — I wanted bots for screenshots, videos, and roleplay, and just wanted something fun (and some company) in Garry's Mod. I figured other people probably wanted the same thing, so I released it.
+*(keep your existing FAQ here, unchanged)*
 
 ---
 
-##  About & Credits
+## About & Credits
 
-Created solo, with AI assistance on complex Lua logic (combat AI, Freecam, and similar systems). Idea, design, and structure are original.
-
-- **GitHub:** [LaryssaHtml](https://github.com/)
-- **Instagram:** [@emotionalssciencegirl](https://www.instagram.com/emotionalssciencegirl/)
-- **YouTube:**  [Lyssa](https://www.youtube.com/@lary9lf)
-
-Skull icon PNG sourced from rawpixel.com — contact me for any credit/removal requests regarding other assets.
+*(keep your existing credits here, unchanged)*
