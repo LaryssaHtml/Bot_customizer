@@ -220,10 +220,32 @@ Models, colors, voices, conversations, combat, dancing, profiles, inventory, sav
 
 ## ❓ FAQ
 
-*(keep your existing FAQ here, unchanged)*
+**Why is the menu in Portuguese by default?**
+That's just the default language. Change it anytime in the **Options tab**, then close and reopen the menu so the translation applies fully.
+
+**Did you use AI to make this?**
+Yes. I used AI assistance mainly for the **Lua logic** behind more complex systems (bot combat AI, Freecam, dialogue, navigation, etc.). The original **idea, design direction, and structure** of the addon are entirely mine. This addon took over a month of continuous testing, fixing, and revising. It's not something you just generate and ship.
+
+**Can I use an image/asset you used and you don't have rights to?**
+If you're the original owner of any image used (like backgrounds) and want it removed or credited differently, just contact me. I'll remove or swap it, no problem.
+
+**Can I suggest a feature or report a bug?**
+Absolutely, suggestions and bug reports are welcome! Just keep in mind updates might take a while since I juggle other projects.
+
+**Can I make my own improved version?**
+Go for it! Just please credit the original idea/addon.
+
+**Why did you make this?**
+Honestly, I wanted bots for screenshots, videos, and roleplay, and just wanted something fun (and some company) in Garry's Mod. I figured other people probably wanted the same thing, so I released it.
 
 ---
 
 ## About & Credits
 
-*(keep your existing credits here, unchanged)*
+Created solo, with AI assistance on complex Lua logic (combat AI, Freecam, dialogue, navigation, and similar systems). Idea, design, and structure are original.
+
+- **GitHub:** [LaryssaHtml](https://github.com/LaryssaHtml)
+- **Instagram:** [@emotionalssciencegirl](https://www.instagram.com/emotionalssciencegirl/)
+- **YouTube:** [Lyssa](https://www.youtube.com/@lary9lf)
+
+Skull icon PNG sourced from rawpixel.com. Contact me for any credit/removal requests regarding other assets.
